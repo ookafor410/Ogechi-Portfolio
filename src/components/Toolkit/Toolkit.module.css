@@ -1,0 +1,110 @@
+.section {
+  padding: 0 var(--space-lg) 80px;
+}
+
+.wheel {
+  position: relative;
+  width: 100%;
+  max-width: var(--max-width);
+  aspect-ratio: 1.95 / 1;
+  margin: 0 auto;
+  overflow: hidden;
+  --tool-size: clamp(90px, 10vw, 160px);
+  --wheel-duration: 50s;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 100%, rgba(255, 200, 0, 0.12), transparent 60%);
+  pointer-events: none;
+}
+
+.ground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: var(--border-width);
+  background: var(--color-border-soft);
+  pointer-events: none;
+}
+
+.orbit {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: calc(100% - var(--tool-size));
+  aspect-ratio: 1 / 1;
+  transform: translate(-50%, -50%);
+  animation: spin var(--wheel-duration) linear infinite;
+}
+
+.slot {
+  position: absolute;
+  inset: 0;
+}
+
+.chip {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: var(--tool-size);
+  height: var(--tool-size);
+  transform: translate(-50%, -50%);
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.35),
+    inset 0 0.5px 0.5px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.quote {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  font-size: var(--fs-quote);
+  line-height: var(--lh-quote);
+  color: var(--color-accent);
+  pointer-events: none;
+}
+
+@keyframes spin {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit {
+    animation: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .wheel {
+    --tool-size: clamp(64px, 12vw, 110px);
+  }
+}
+
+@media (max-width: 600px) {
+  .wheel {
+    --tool-size: clamp(46px, 16vw, 80px);
+  }
+
+  .quote {
+    font-size: clamp(1.1rem, 5vw, var(--fs-quote));
+  }
+}

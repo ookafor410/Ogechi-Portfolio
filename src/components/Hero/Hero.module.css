@@ -1,0 +1,83 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  min-height: clamp(420px, 55vw, 737px);
+  padding: var(--space-lg);
+}
+
+.wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 930px;
+  width: 100%;
+  opacity: 0;
+  filter: blur(20px);
+  transition:
+    opacity 0.9s ease,
+    filter 0.9s ease;
+}
+
+.wrapper.ready {
+  opacity: 1;
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wrapper {
+    transition: none;
+  }
+}
+
+.heading {
+  margin: 0;
+  text-align: center;
+  color: var(--color-text);
+  font-weight: 400;
+}
+
+.line {
+  display: block;
+  font-size: var(--fs-h1);
+  line-height: var(--lh-h1);
+}
+
+.line + .line {
+  margin-top: var(--space-md);
+}
+
+.wordCycler {
+  display: inline-grid;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+.wordCyclerItem {
+  grid-area: 1 / 1;
+  animation: word-in 0.5s ease both;
+}
+
+@keyframes word-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.4em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wordCyclerItem {
+    animation: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    min-height: 60vh;
+  }
+}

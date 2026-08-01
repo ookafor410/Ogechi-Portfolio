@@ -1,0 +1,85 @@
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  height: var(--reveal-line-height);
+  overflow: hidden;
+  transition: transform 0.35s ease;
+}
+
+.link:hover .track,
+.link:focus-visible .track,
+.link:active .track {
+  transform: translateY(-100%);
+}
+
+.label {
+  display: block;
+  height: var(--reveal-line-height);
+  white-space: nowrap;
+}
+
+/* "Learn more" style — small uppercase tracked link */
+.upper {
+  --reveal-line-height: var(--lh-link-upper);
+  padding: 2px 0;
+}
+
+.upper .label {
+  font-size: var(--fs-link-upper);
+  line-height: var(--lh-link-upper);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.upper .label:first-child {
+  color: var(--color-accent);
+}
+
+.upper .label:last-child {
+  color: var(--color-text);
+}
+
+/* Pill button style — CTA / "Let's work together!" */
+.pill {
+  --reveal-line-height: var(--lh-link);
+  background: var(--color-surface);
+  border: var(--border-width) solid var(--color-border-soft);
+  border-radius: var(--radius-pill);
+  padding: 10px 24px;
+}
+
+.pill .label {
+  font-size: var(--fs-link);
+  line-height: var(--lh-link);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.pill:hover,
+.pill:focus-visible {
+  border-color: var(--color-accent);
+}
+
+/* Email button style — About page contact */
+.email {
+  --reveal-line-height: 50px;
+  border-radius: 5px;
+  padding: 9px 24px;
+}
+
+.email .label {
+  font-size: var(--fs-h2);
+  line-height: 50px;
+  font-weight: 300;
+  color: var(--color-text);
+}

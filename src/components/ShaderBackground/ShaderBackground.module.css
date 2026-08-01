@@ -1,0 +1,9 @@
+.wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.wrapper canvas {
+  display: block;
+}

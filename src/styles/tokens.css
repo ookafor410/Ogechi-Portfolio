@@ -1,0 +1,79 @@
+:root {
+  /* Color */
+  --color-bg: #000000;
+  --color-surface: #0f0f0f;
+  --color-surface-alt: #171717;
+  --color-border: #222225;
+  --color-border-soft: rgba(245, 245, 245, 0.1);
+  --color-text: #ffffff;
+  --color-text-70: rgba(255, 255, 255, 0.7);
+  --color-text-40: rgba(255, 255, 255, 0.4);
+  --color-accent: #ffc800;
+  --color-mono-text: #e0f1f2;
+  --color-nav-bg: rgba(33, 33, 33, 0.85);
+  --color-footer-heading: rgba(245, 245, 245, 0.4);
+
+  /* Font family */
+  --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "Cutive Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  /* Type scale (rem) — font-size / line-height */
+  --fs-h1: 2.706rem;
+  --lh-h1: 2.9rem;
+  --fs-h2: 1.75rem;
+  --lh-h2: 2.1rem;
+  --fs-h3: 1.625rem;
+  --lh-h3: 1.53rem;
+  --fs-card-title: 1.3125rem;
+  --lh-card-title: 1.68rem;
+  --fs-nav-brand: 1.25rem;
+  --lh-nav-brand: 1.5rem;
+  --fs-nav-link: 0.844rem;
+  --lh-nav-link: 1.05rem;
+  --fs-body: 0.9125rem;
+  --lh-body: 1.2rem;
+  --fs-link: 0.931rem;
+  --lh-link: 1.2rem;
+  --fs-link-upper: 0.8125rem;
+  --lh-link-upper: 0.975rem;
+  --fs-tag: 0.8125rem;
+  --lh-tag: 0.975rem;
+  --fs-tag-sm: 0.763rem;
+  --lh-tag-sm: 0.975rem;
+  --fs-caption: 0.806rem;
+  --lh-caption: 0.875rem;
+  --fs-footer-link: 1rem;
+  --lh-footer-link: 1.2rem;
+  --fs-footer-heading: 0.956rem;
+  --lh-footer-heading: 1.2rem;
+  --fs-mono: 2.819rem;
+  --lh-mono: 3.154rem;
+  --fs-category-number: 1.7rem;
+  --fs-category-title: 1.625rem;
+  --lh-category: 1.53rem;
+  --fs-category-desc: 0.931rem;
+  --lh-category-desc: 1.2rem;
+  --fs-quote: 1.85rem;
+  --lh-quote: 2.4rem;
+  --fs-about-heading: 2.225rem;
+  --lh-about-heading: 2.75rem;
+  --fs-about-lead: 1.031rem;
+  --lh-about-lead: 1.461rem;
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 10px;
+  --space-md: 15px;
+  --space-lg: 30px;
+  --max-width: 1440px;
+  --content-width: 1408px;
+
+  /* Radii */
+  --radius-pill: 999px;
+  --radius-card: 20px;
+  --radius-nav: 27px;
+
+  /* Borders */
+  --border-width: 1px;
+  --border-width-hair: 0.5px;
+}

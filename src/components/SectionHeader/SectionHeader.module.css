@@ -1,0 +1,15 @@
+.header {
+  padding: var(--space-lg) 0;
+}
+
+.bordered {
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.title {
+  margin: 0;
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  font-weight: 400;
+  color: var(--color-text);
+}

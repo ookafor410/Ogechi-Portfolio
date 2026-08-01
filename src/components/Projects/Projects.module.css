@@ -1,0 +1,9 @@
+.section {
+  padding: 0 var(--space-lg) 60px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}

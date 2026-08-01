@@ -1,0 +1,17 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+  padding: 100px var(--space-lg);
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.heading {
+  margin: 0;
+  max-width: 810px;
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  font-weight: 400;
+  color: var(--color-text);
+}

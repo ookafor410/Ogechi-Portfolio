@@ -1,0 +1,73 @@
+.galleryWrap {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 20px 0 60px;
+}
+
+.galleryWrap:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.track {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(16px, 2.5vw, 40px);
+  width: max-content;
+  padding-inline: clamp(20px, 4vw, 80px);
+}
+
+.item {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.alignStart {
+  align-self: flex-start;
+}
+
+.alignCenter {
+  align-self: center;
+}
+
+.alignEnd {
+  align-self: flex-end;
+}
+
+.size0 {
+  height: clamp(320px, 58vh, 620px);
+}
+
+.size1 {
+  height: clamp(260px, 46vh, 500px);
+}
+
+.size2 {
+  height: clamp(380px, 66vh, 720px);
+}
+
+.size3 {
+  height: clamp(240px, 41vh, 440px);
+}
+
+.size4 {
+  height: clamp(300px, 56vh, 600px);
+}
+
+.image {
+  display: block;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+.empty {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg) 120px;
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text-70);
+}
