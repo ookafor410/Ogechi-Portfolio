@@ -7,7 +7,7 @@ const QUICK_GLANCE_SIZES = {
   stylelogxp: 'half',
   undead: 'half',
   magnesynth: 'half',
-  'hungry-om-nom': 'half'
+  omnom: 'half'
 }
 
 const QUICK_GLANCE = Object.keys(QUICK_GLANCE_SIZES)
