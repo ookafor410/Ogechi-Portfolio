@@ -16,6 +16,7 @@
   /* Font family */
   --font-primary: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-mono: "Cutive Mono", ui-monospace, "SFMono-Regular", monospace;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
 
   /* Type scale (rem) — font-size / line-height */
   --fs-h1: 2.706rem;
@@ -59,6 +60,16 @@
   --lh-about-heading: 2.75rem;
   --fs-about-lead: 1.031rem;
   --lh-about-lead: 1.461rem;
+  --fs-headline: 3.4rem;
+  --lh-headline: 3.7rem;
+  --fs-standfirst: 1.4rem;
+  --lh-standfirst: 1.95rem;
+  --fs-article-meta: 0.85rem;
+  --lh-article-meta: 1.2rem;
+  --fs-article-body: 1.2rem;
+  --lh-article-body: 2rem;
+  --fs-pull-quote: 2rem;
+  --lh-pull-quote: 2.6rem;
 
   /* Spacing */
   --space-xs: 4px;

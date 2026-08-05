@@ -26,6 +26,14 @@ import img17 from '../assets/undead_project/img17.jpg'
 import img19 from '../assets/undead_project/img19.jpg'
 import img24 from '../assets/undead_project/img24.jpg'
 import img25 from '../assets/undead_project/img25.jpg'
+import hungryOmNomWelcome from '../assets/hungry_nom_project/hungry-om-nom-welcome.png'
+import hungryOmNomGameplay from '../assets/hungry_nom_project/hungry-om-nom-gameplay.png'
+import hungryOmNomBladeTrail from '../assets/hungry_nom_project/hungry-om-nom-blade-trail.png'
+import hungryOmNomLevel5 from '../assets/hungry_nom_project/hungry-om-nom-level5.png'
+import hungryOmNomInstructions from '../assets/hungry_nom_project/hungry-om-nom-instructions.png'
+import hungryOmNomFigmaDesign from '../assets/hungry_nom_project/figma-design.png'
+import hungryOmNomWin from '../assets/hungry_nom_project/hungry-om-nom-win.png'
+import hungryOmNomGameOver from '../assets/hungry_nom_project/hungry-om-nom-gameover.png'
 import jhappi from '../assets/images/project-jhappi.jpg'
 import vaxa from '../assets/images/project-vaxa.jpg'
 import biome from '../assets/images/project-biome.jpg'
@@ -261,84 +269,64 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 'biome',
-    image: biome,
-    alt: 'A petri dish with branching yellow slime mold growth photographed on a black background',
-    tags: ['2025', 'Materials Design'],
-    title: 'BIOME: Futures of Biodesign & Biofabrication',
-    description: 'Inquiry into the possibility of developing Living Materials',
-  },
-  {
-    id: 'isro',
-    image: isro,
-    alt: 'A tablet displaying a redesigned ISRO website homepage with a rocket launch photo',
-    tags: ['2024', 'Product Design'],
-    title: 'ISRO website redesign',
-    description: '24hr UI/UX Challenge',
-  },
-  {
-    id: 'deciced',
-    image: deciced,
-    alt: 'Overhead view of a hexagonal board game in progress with players placing tiles',
-    tags: ['2024', 'Systems Design'],
-    title: 'DecidEd',
-    description: 'Systems project diving in the complexity of decision making',
-  },
-  {
-    id: 'mycotint',
-    image: mycotint,
-    alt: 'A research poster for MycoTint, a stress-responsive mycelium material, with diagrams and product visualization sketches',
-    tags: ['2026', 'Materials Design'],
-    title: 'MycoTint',
-    description: 'Stress-sensing mycelium',
-  },
-  {
-    id: 'cu-soon-club',
-    image: cuSoonClub,
-    alt: 'A vintage fax machine printing out a message on perforated paper',
-    tags: ['2024', 'Mixed Bag!'],
-    title: 'C U Soon Club',
-    description: 'Phygital messaging format',
-  },
-  {
-    id: 'teaching-electronics',
-    image: teachingElectronics,
-    alt: 'Kids gathered around a table assembling a simple circuit with an instructor',
-    tags: ['2024', 'Product Design'],
-    title: 'Teaching simple electronics to kids',
-    description: '',
-  },
-  {
-    id: 'evergreening-vaccines',
-    image: evergreeningVaccines,
-    alt: 'A zine titled "Evergreening of Vaccines" resting on a Design for Health journal',
-    tags: ['2024', 'Systems Design'],
-    title: 'Systems Thinking: Evergreening of Vaccines',
-    description: 'Infographic Systems Thinking Zine',
-  },
-  {
-    id: 'indigenous-practices',
-    image: indigenousPractices,
-    alt: 'An aerial view of a terraced hillside with a stone structure, captioned "Indigenous Practices"',
-    tags: ['2023', 'Product Design'],
-    title: 'Indigenous Practices: Field Research',
-    description: 'Field research of vernacular architecture',
-  },
-  {
-    id: 'inclusive-sanitary-pad',
-    image: inclusiveSanitaryPad,
-    alt: '"One" sanitary napkin packaging beside a photo of hands holding the redesigned sticker applicator',
-    tags: ['2022', 'Product Design'],
-    title: 'One: Inclusive Sanitary Pad',
-    description: 'Sanitary pad sticker redesign',
-  },
-  {
-    id: 'workshop-skills',
-    image: workshopSkills,
-    alt: 'A hand-turned wooden cup, a welded metal ornament, and a scale-model brass cannon from a prototyping workshop',
-    tags: ['Product Design'],
-    title: 'Workshop Skills',
-    description:
-      'A compilation of small projects displaying prototyping skills like welding, stitching, lathe work, woodwork, casting etc.',
+    id: 'omnom',
+    image: hungryOmNomWelcome,
+    alt: "The Hungry Om Nom title screen on a cardboard-textured background, with Start and Instructions buttons, the tagline 'Slice the ropes, dodge the walls, and feed Om Nom!', and a prompt to allow webcam access.",
+    tags: ['2026', 'Computer Vision'],
+    title: 'Hungry Om Nom',
+    description: 'A browser-based rope-cutting game controlled entirely by webcam hand-tracking — no mouse, keyboard, or touch.',
+    href: '/work/omnom',
+    overview:
+      "Hungry Om Nom is a browser-based rope-cutting game controlled entirely through webcam hand-tracking — no mouse, keyboard, or touch input. Starting from an existing MediaPipe hand-tracking codebase built for a Fruit Ninja–style game, I re-architected it into a physics-based rope-cutting experience inspired by Cut the Rope: players swipe a finger in front of the camera to slice ropes, using real line-intersection detection and Verlet-integration physics to swing candy through multi-rope levels, collect stars for bonus points, and deliver it into the character's mouth. The project includes a full level system, scoring and lives, and a custom-illustrated UI — welcome screen, instructions, and win/lose states — designed in Figma and implemented with vanilla JavaScript and HTML5 canvas.",
+    timeline: 'July–August 2026',
+    type: 'Personal Project · Browser Game · Computer Vision',
+    role: 'Solo Developer & Designer — game and physics engineering, hand-tracking integration, UI/UX design.',
+    tools: ['JavaScript', 'HTML5 Canvas', 'MediaPipe Hands', 'Figma', 'HTML/CSS', 'Python'],
+    liveUrl: 'https://hungry-om-nom.vercel.app/',
+    liveLabel: 'Play Hungry Om Nom',
+    attribution:
+      "This game is an educational reimplementation inspired by ZeptoLab's Cut the Rope. Om Nom is a character owned by ZeptoLab.",
+    heroImage: {
+      src: hungryOmNomWelcome,
+      alt: "The Hungry Om Nom title screen on a cardboard-textured background, with Start and Instructions buttons, the tagline 'Slice the ropes, dodge the walls, and feed Om Nom!', and a prompt to allow webcam access.",
+      aspectRatio: '1600 / 900',
+    },
+    images: [
+      {
+        src: hungryOmNomGameplay,
+        alt: 'Gameplay screen: a lollipop hanging from two ropes over a cardboard background, gold stars to collect, the green character waiting at the bottom, and a Level/Score/Lives readout in the top-left corner.',
+        aspectRatio: '800 / 900',
+      },
+      {
+        src: hungryOmNomBladeTrail,
+        alt: 'The same gameplay scene with a white slicing trail cutting across one of the ropes, showing a finger-swipe cut in progress.',
+        aspectRatio: '800 / 900',
+      },
+      {
+        src: hungryOmNomLevel5,
+        alt: 'A later level with the candy held by three ropes and scattered stars, score 60, showing increased difficulty.',
+        aspectRatio: '800 / 900',
+      },
+      {
+        src: hungryOmNomInstructions,
+        alt: "A 'How To Play' card listing five rules — swipe to cut a rope, guide the candy into the mouth, grab stars for double points, don't miss the candy, and clear every level to win — each with an icon.",
+        aspectRatio: '1600 / 900',
+      },
+      {
+        src: hungryOmNomFigmaDesign,
+        alt: "The game's screens being designed in Figma, showing the welcome and instructions layouts side by side in the editor with the layers panel.",
+        aspectRatio: '2816 / 1576',
+      },
+      {
+        src: hungryOmNomWin,
+        alt: "A 'You Win!' end screen with a party emoji, a final score of 350, and a Play Again button.",
+        aspectRatio: '1600 / 900',
+      },
+      {
+        src: hungryOmNomGameOver,
+        alt: "A 'Game Over' end screen showing a final score of 120 and a Play Again button.",
+        aspectRatio: '1600 / 900',
+      },
+    ],
   },
 ]

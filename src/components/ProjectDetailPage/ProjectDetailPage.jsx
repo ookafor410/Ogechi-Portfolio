@@ -29,7 +29,8 @@ export default function ProjectDetailPage() {
     )
   }
 
-  const { title, overview, heroImage, images = [] } = project
+  const { title, overview, heroImage, images = [], liveUrl, liveLabel, attribution } = project
+  const resolvedLiveLabel = liveLabel || `Try ${title} live`
 
   return (
     <section aria-label={title}>
@@ -45,6 +46,24 @@ export default function ProjectDetailPage() {
         }
       />
       <div className={styles.content}>
+        {liveUrl && (
+          <div className={styles.liveLinkWrap}>
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.liveLink}
+              aria-label={`${resolvedLiveLabel} (opens in a new tab)`}
+            >
+              <svg className={styles.liveLinkIcon} viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" strokeWidth="1.5" />
+                <path d="M10 8.5L16 12L10 15.5V8.5Z" fill="currentColor" />
+              </svg>
+              <span className={styles.liveLinkText}>{resolvedLiveLabel}</span>
+            </a>
+          </div>
+        )}
+
         {heroImage && (
           <figure className={styles.hero}>
             <img
@@ -95,6 +114,8 @@ export default function ProjectDetailPage() {
             ))}
           </div>
         )}
+
+        {attribution && <p className={styles.attribution}>{attribution}</p>}
 
         <div className={styles.backWrap}>
           <RevealLink href="/work" variant="upper">
