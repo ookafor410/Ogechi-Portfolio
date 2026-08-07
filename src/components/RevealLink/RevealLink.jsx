@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import styles from './RevealLink.module.css'
 
 export default function RevealLink({
@@ -9,6 +10,22 @@ export default function RevealLink({
   download,
   className = '',
 }) {
+  const isInternalRoute = href && href.startsWith('/') && !external && !download
+  const combinedClassName = `${styles.link} ${styles[variant]} ${className}`
+
+  if (isInternalRoute) {
+    return (
+      <Link className={combinedClassName} to={href} onClick={onClick}>
+        <span className={styles.track}>
+          <span className={styles.label}>{children}</span>
+          <span className={styles.label} aria-hidden="true">
+            {children}
+          </span>
+        </span>
+      </Link>
+    )
+  }
+
   const Tag = href ? 'a' : 'button'
   const extraProps = href
     ? {
@@ -19,7 +36,7 @@ export default function RevealLink({
 
   return (
     <Tag
-      className={`${styles.link} ${styles[variant]} ${className}`}
+      className={combinedClassName}
       href={href}
       onClick={onClick}
       {...extraProps}

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Tag from '../Tag/Tag'
 import styles from './ProjectCard.module.css'
 
@@ -11,7 +12,7 @@ export default function ProjectCard({
   href = '#',
 }) {
   return (
-    <a className={`${styles.card} ${styles[size]}`} href={href}>
+    <Link className={`${styles.card} ${styles[size]}`} to={href}>
       <div className={styles.imageWrap}>
         <img className={styles.image} src={image} alt={alt} loading="lazy" />
       </div>
@@ -26,6 +27,6 @@ export default function ProjectCard({
           {description && <p className={styles.description}>{description}</p>}
         </div>
       </div>
-    </a>
+    </Link>
   )
 }
