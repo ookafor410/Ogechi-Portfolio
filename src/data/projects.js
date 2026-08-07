@@ -137,6 +137,8 @@ export const PROJECTS = [
       'Google Gemini API',
       'IndexedDB',
     ],
+    liveUrl: 'https://stylelogxp.vercel.app',
+    liveLabel: 'Try StylelogXP live',
     heroImage: {
       src: stylelogxpCatalog,
       alt: 'A Windows XP-style desktop showing the StyleLogXP outfit catalog window with a grid of logged outfit thumbnails',

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styles from './Nav.module.css'
 
 const LINKS = [
-  { label: 'CV', href: '#' },
+  { label: 'CV', to: '/cv' },
   { label: 'Work', to: '/work' },
   { label: 'Photobook', to: '/photobook' },
   { label: 'About', to: '/about' },

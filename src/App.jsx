@@ -6,6 +6,7 @@ import HomePage from './components/HomePage/HomePage'
 import ProjectsPage from './components/ProjectsPage/ProjectsPage'
 import AboutPage from './components/AboutPage/AboutPage'
 import PhotobookPage from './components/PhotobookPage/PhotobookPage'
+import CVPage from './components/CVPage/CVPage'
 import ProjectDetailPage from './components/ProjectDetailPage/ProjectDetailPage'
 import ArticlePage from './components/ArticlePage/ArticlePage'
 import { ARTICLES } from './data/articles'
@@ -33,6 +34,7 @@ function App() {
           <Route path="/work/my-name-is-not-an-inconvenience" element={<ArticlePage article={nameMeaningArticle} />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/photobook" element={<PhotobookPage />} />
+          <Route path="/cv" element={<CVPage />} />
         </Routes>
       </main>
       <Footer />

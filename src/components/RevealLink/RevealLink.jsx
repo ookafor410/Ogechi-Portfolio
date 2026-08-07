@@ -6,13 +6,15 @@ export default function RevealLink({
   children,
   variant = 'upper',
   external = false,
+  download,
   className = '',
 }) {
   const Tag = href ? 'a' : 'button'
   const extraProps = href
-    ? external
-      ? { target: '_blank', rel: 'noreferrer' }
-      : {}
+    ? {
+        ...(external ? { target: '_blank', rel: 'noreferrer' } : {}),
+        ...(download ? { download } : {}),
+      }
     : { type: 'button' }
 
   return (
