@@ -107,11 +107,6 @@ export const PROJECTS = [
         alt: 'The Magnesynth keypad and microcontroller prototype resting on a laptop playing a code-loading tutorial, in the MangLab interactive-media lab.',
         aspectRatio: '2400 / 1800',
       },
-      {
-        src: stylelogxpLogOff,
-        alt: 'A Windows XP-style desktop showing the StyleLogXP log off screen with a list of app options and a search bar',
-        aspectRatio: '800 / 448',
-      }
     ],
   },
   {
