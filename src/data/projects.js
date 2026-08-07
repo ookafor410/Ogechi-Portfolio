@@ -34,6 +34,13 @@ import hungryOmNomInstructions from '../assets/hungry_nom_project/hungry-om-nom-
 import hungryOmNomFigmaDesign from '../assets/hungry_nom_project/figma-design.png'
 import hungryOmNomWin from '../assets/hungry_nom_project/hungry-om-nom-win.png'
 import hungryOmNomGameOver from '../assets/hungry_nom_project/hungry-om-nom-gameover.png'
+import pinklady from '../assets/pink_lady_project/imgp4.jpeg'
+import imgp1 from '../assets/pink_lady_project/imgp1.jpeg'
+import imgp2 from '../assets/pink_lady_project/imgp2.jpeg'
+import imgp3 from '../assets/pink_lady_project/imgp3.jpeg'
+import imgp4 from '../assets/pink_lady_project/imgp4.jpeg'
+import imgp5 from '../assets/pink_lady_project/imgp5.jpeg'
+import imgp6 from '../assets/pink_lady_project/imgp6.jpeg'
 import jhappi from '../assets/images/project-jhappi.jpg'
 import vaxa from '../assets/images/project-vaxa.jpg'
 import biome from '../assets/images/project-biome.jpg'
@@ -178,7 +185,7 @@ export const PROJECTS = [
     href: '/work/undead',
     overview:
       "What if skate culture never dies? This spec campaign for Zumiez, produced under Everlinity Productions, reimagines New York City skate culture through a surreal, dystopian lens.Skaters move like zombies, caught between motion and decay. Set against the raw textures of graffiti-covered underpasses and late-night city streets, the series blends skateboarding culture with horror.  The project leans into contrast with flash lighting against deep shadows and movement frozen into something almost staged. The boards, clothing, and attitude remain true to skate culture, but the styling distorts it begins to feel unfamiliar.",
-    timeline: 'March–June 2024',
+    timeline: 'October 2025',
     type: 'Photography · Commercial Campaign · Creative Direction · Fashion Styling',
     role: "As Creative Strategist, Stylist, and Photographer, I led a 10+ person team through a 14-hour production to bring this concept to life, capturing not just final campaign images but hundreds of behind-the-scenes assets designed for multi-platform storytelling. ",
     tools: [
@@ -328,5 +335,63 @@ export const PROJECTS = [
         aspectRatio: '1600 / 900',
       },
     ],
+  },
+  {
+    id: 'pinklady',
+    image: pinklady,
+    alt: 'Three zombie-styled skaters stand on boards beneath an underpass.',
+    tags: ['2025', 'Freelance Photography'],
+    title: 'Pink Lady',
+    description: 'The “Pink Lady” stands in contrast to everything around her',
+    href: '/work/pinklady',
+    overview:
+      "She moves through the city like she doesn’t belong to its palette.  Dressed in layers of electric pink, the “Pink Lady” stands in contrast to everything around her; muted browns, worn brick, faded doors, and the quiet neutrality of everyday life. In a place where people often dress to blend in, to move unnoticed, she does the opposite. She takes up space.  This series explores that tension between individuality and environment. The city acts as both backdrop and resistance as its textures are rough, its colors subdued.  The Pink Lady introduces a softness, boldness, and a kind of unapologetic presence. She’s existing in the space differently and it's impossible to ignore.  Why do we choose to mute ourselves in public spaces? What does it mean to be seen brightly?",
+    timeline: 'April 2024',
+    type: 'Photography · Creative Direction · Fashion Styling',
+    role: "Stylist and Photographer — I directed the shoot, styled the subject, and captured the images.",
+    tools: [
+      'Adobe Photoshop',
+      'Adobe Lightroom',
+      'Adobe Premiere Pro',
+      'Canon EOS R5 · Canon RF 24-70mm f/2.8L IS USM Lens',
+      'Canon RF 70-200mm f/2.8L IS USM Lens',
+    ],
+    heroImage: {
+      src: imgp4,
+      alt: 'Three zombie-styled skaters stand on boards beneath an underpass',
+      aspectRatio: '2048 / 1365',
+    },
+    images: [
+      {
+        src: imgp1,
+        alt: 'Three zombie-styled skaters pose beneath a graffiti-covered underpass',
+        aspectRatio: '1365 / 2048',
+      },
+      {
+        src: imgp2,
+        alt: 'A zombie-styled skater balances on a skateboard at night',
+        aspectRatio: '1365 / 2048',
+      },
+      {
+        src: imgp4,
+        alt: 'A zombie-styled skater balances on a skateboard at night',
+        aspectRatio: '1365 / 2048',
+      },
+      {
+        src: imgp3,
+        alt: 'A skater holds a board beside a graffiti-covered wall',
+        aspectRatio: '1365 / 2048',
+      },
+      {
+        src: imgp5,
+        alt: 'Three skaters enter a dark skate spot through a chain-link gate',
+        aspectRatio: '1365 / 2048',
+      },
+      {
+        src: imgp6,
+        alt: 'Three skaters pose while production equipment remains visible',
+        aspectRatio: '1365 / 2048',
+      },
+    ]
   },
 ]
