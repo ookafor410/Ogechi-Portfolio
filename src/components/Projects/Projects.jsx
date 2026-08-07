@@ -1,24 +1,40 @@
-import productDesign from '../../assets/images/category-product-design.png'
-import visualDesign from '../../assets/images/category-visual-design.png'
-import mixedBag from '../../assets/images/category-mixed-bag.png'
+import mixedBag from '../../assets/images/mix-image.jpg'
+import creativeComputingProjects from '../../assets/images/coding-image.png'
+import photographyProjects from '../../assets/images/photo-image.png'
+import writingProjects from '../../assets/images/writing-image.png'
 import SectionHeader from '../SectionHeader/SectionHeader'
 import CategoryRow from '../CategoryRow/CategoryRow'
 import styles from './Projects.module.css'
 
 const CATEGORIES = [
   {
-    image: productDesign,
+    image: creativeComputingProjects,
     alt: 'Close-up of a weathered metal drill bit connector against a dark background',
     number: '01',
-    title: 'Product Design',
+    title: 'Creative Computing',
     description: 'All things problem solving',
+    imageFit: 'contain',
+    imagePosition: '70% 90%',
+    imageZoom: 3,
   },
   {
-    image: visualDesign,
+    image: photographyProjects,
+    alt: 'Close-up of a weathered metal drill bit connector against a dark background',
+    number: '01',
+    title: 'Photography',
+    description: 'All things problem solving',
+    imageFit: 'contain',
+    imagePosition: '30% 90%',
+    imageZoom: 2.5,
+  },
+  {
+    image: writingProjects,
     alt: 'A collage of colorful vintage bottle caps from breweries around the world',
     number: '02',
-    title: 'Visual Design',
+    title: 'Writing',
     description: 'All things pretty and pretty easy to understand',
+    imagePosition: 'top left',
+    imageZoom: 1,
   },
   {
     image: mixedBag,
@@ -26,6 +42,9 @@ const CATEGORIES = [
     number: '03',
     title: 'Mixed Bag!',
     description: 'Shenanigans and Tomfoolery',
+    imageFit: 'contain',
+    imagePosition: '50% 40%',
+    imageZoom: 2.5,
   },
 ]
 

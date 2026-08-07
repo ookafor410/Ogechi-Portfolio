@@ -18,7 +18,7 @@ export default function IntroSplit() {
           </p>
         </div>
         <div className={styles.bottom}>
-          <p className={styles.caption}>↓ What I'm upto when I'm not designing</p>
+          <p className={styles.caption}>↓ What I'm upto when I'm not creating</p>
           <RevealLink href="#toolkit" variant="upper">
             Learn more
           </RevealLink>

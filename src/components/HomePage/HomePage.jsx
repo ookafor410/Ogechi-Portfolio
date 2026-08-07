@@ -22,10 +22,10 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <IntroSplit />
       <SelectedWork />
       <Projects />
       <Toolkit />
+      <IntroSplit />
       <Keyboard />
       <CTA />
     </>
